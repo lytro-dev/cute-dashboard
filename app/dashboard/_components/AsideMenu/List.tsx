@@ -7,12 +7,14 @@ type Props = {
   isDropdownList?: boolean;
   className?: string;
   onRouteChange: () => void;
+  closeAllDropdowns?: () => void;
 };
 
 export default function AsideMenuList({
   menu,
   isDropdownList = false,
   className = "",
+  closeAllDropdowns,
   ...props
 }: Props) {
   return (
@@ -23,6 +25,7 @@ export default function AsideMenuList({
           item={item}
           isDropdownList={isDropdownList}
           onRouteChange={props.onRouteChange}
+          closeAllDropdowns={closeAllDropdowns}
         />
       ))}
     </ul>

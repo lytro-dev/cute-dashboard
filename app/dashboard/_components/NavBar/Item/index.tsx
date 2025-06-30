@@ -15,14 +15,17 @@ import { setDarkMode } from "../../../../_stores/darkModeSlice";
 type Props = {
   item: MenuNavBarItem;
   onRouteChange: () => void;
+  openDropdown: string | null;
+  setOpenDropdown: (key: string | null) => void;
 };
 
-export default function NavBarItem({ item, ...props }: Props) {
+export default function NavBarItem({ item, openDropdown, setOpenDropdown, ...props }: Props) {
   const dispatch = useAppDispatch();
 
   const userName = useAppSelector((state) => state.main.userName);
 
-  const [isDropdownActive, setIsDropdownActive] = useState(false);
+  const dropdownKey = item.isCurrentUser ? 'currentUser' : (item.label || '');
+  const isDropdownActive = openDropdown === dropdownKey;
 
   const componentClass = [
     "block lg:flex items-center relative cursor-pointer",
@@ -37,7 +40,7 @@ export default function NavBarItem({ item, ...props }: Props) {
 
   const handleMenuClick = () => {
     if (item.menu) {
-      setIsDropdownActive(!isDropdownActive);
+      setOpenDropdown(isDropdownActive ? null : dropdownKey);
     }
 
     if (item.isToggleLightDark) {
@@ -81,7 +84,10 @@ export default function NavBarItem({ item, ...props }: Props) {
         >
           <NavBarMenuList
             menu={item.menu}
-            onRouteChange={props.onRouteChange}
+            onRouteChange={() => {
+              setOpenDropdown(null);
+              props.onRouteChange();
+            }}
           />
         </div>
       )}

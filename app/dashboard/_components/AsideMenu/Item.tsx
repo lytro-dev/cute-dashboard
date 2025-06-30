@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { mdiMinus, mdiPlus } from "@mdi/js";
 import Icon from "../../../_components/Icon";
 import Link from "next/link";
@@ -13,11 +13,13 @@ type Props = {
   item: MenuAsideItem;
   onRouteChange: () => void;
   isDropdownList?: boolean;
+  closeAllDropdowns?: () => void;
 };
 
-const AsideMenuItem = ({ item, isDropdownList = false, ...props }: Props) => {
+const AsideMenuItem = ({ item, isDropdownList = false, closeAllDropdowns, ...props }: Props) => {
   const [isLinkActive, setIsLinkActive] = useState(false);
   const [isDropdownActive, setIsDropdownActive] = useState(false);
+  const itemRef = useRef<HTMLDivElement | null>(null);
 
   const activeClassAddon =
     !item.color && isLinkActive ? "aside-menu-item-active font-bold" : "";
@@ -27,6 +29,27 @@ const AsideMenuItem = ({ item, isDropdownList = false, ...props }: Props) => {
   useEffect(() => {
     setIsLinkActive(item.href === pathname);
   }, [item.href, pathname]);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    if (!isDropdownActive) return;
+    function handleClickOutside(event: MouseEvent) {
+      if (itemRef.current && !itemRef.current.contains(event.target as Node)) {
+        setIsDropdownActive(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDropdownActive]);
+
+  // Helper to close dropdown and call onRouteChange
+  const handleRouteChangeAndClose = () => {
+    setIsDropdownActive(false);
+    if (closeAllDropdowns) closeAllDropdowns();
+    props.onRouteChange();
+  };
 
   const asideMenuItemInnerContents = (
     <>
@@ -70,13 +93,14 @@ const AsideMenuItem = ({ item, isDropdownList = false, ...props }: Props) => {
           href={item.href}
           target={item.target}
           className={componentClass}
-          onClick={props.onRouteChange}
+          onClick={handleRouteChangeAndClose}
         >
           {asideMenuItemInnerContents}
         </Link>
       )}
       {!item.href && (
         <div
+          ref={itemRef}
           className={componentClass}
           onClick={() => setIsDropdownActive(!isDropdownActive)}
         >
@@ -91,6 +115,10 @@ const AsideMenuItem = ({ item, isDropdownList = false, ...props }: Props) => {
           }`}
           onRouteChange={props.onRouteChange}
           isDropdownList
+          closeAllDropdowns={() => {
+            setIsDropdownActive(false);
+            if (closeAllDropdowns) closeAllDropdowns();
+          }}
         />
       )}
     </li>

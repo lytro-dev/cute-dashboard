@@ -74,13 +74,7 @@ const menuNavBar: MenuNavBarItem[] = [
     href: "https://github.com/lytro-dev/cute-dashboard",
     target: "_blank",
   },
-  {
-    icon: mdiVuejs,
-    label: "Vue version",
-    isDesktopNoLabel: true,
-    href: "https://github.com/lytro/admin-one-vue-tailwind",
-    target: "_blank",
-  },
+
   {
     icon: mdiLogout,
     label: "Log out",
