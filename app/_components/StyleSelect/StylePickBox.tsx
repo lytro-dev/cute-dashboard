@@ -1,9 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import CardBox from "../CardBox";
-import { useState } from "react";
+import Icon from "../Icon";
+import { mdiWhiteBalanceSunny, mdiWeatherNight } from "@mdi/js";
 
 type Props = {
   style: string;
@@ -11,7 +11,6 @@ type Props = {
 
 export default function StylePickBox({ style }: Props) {
   const router = useRouter();
-  const [imgSrc, setImgSrc] = useState(`https://static.lytro.dev/templates/one/small/${style}-v3.png`);
 
   const handleStylePick = (e: React.MouseEvent, style: string) => {
     e.preventDefault();
@@ -25,10 +24,10 @@ export default function StylePickBox({ style }: Props) {
     router.push("/dashboard");
   };
 
-  // fallback image paths
-  const fallbackMap: Record<string, string> = {
-    white: "/white-fallback.png",
-    basic: "/basic-fallback.png",
+  // Choose icon based on style
+  const iconMap: Record<string, string> = {
+    white: mdiWhiteBalanceSunny,
+    basic: mdiWeatherNight,
   };
 
   return (
@@ -37,6 +36,9 @@ export default function StylePickBox({ style }: Props) {
       isHoverable
       onClick={(e) => handleStylePick(e, style)}
     >
+      <div className="mb-3 md:mb-6 flex justify-center">
+        <Icon path={iconMap[style]} size={48} />
+      </div>
       <h1 className="text-xl md:text-2xl font-black capitalize">{style}</h1>
       <h2 className="text-lg md:text-xl">& Dark mode</h2>
     </CardBox>
