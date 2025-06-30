@@ -9,7 +9,6 @@ import {
   mdiLogout,
   mdiThemeLightDark,
   mdiGithub,
-  mdiVuejs,
 } from "@mdi/js";
 import { MenuNavBarItem } from "../../_interfaces";
 

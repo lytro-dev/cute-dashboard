@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { useState } from "react";
 import { mdiChevronUp, mdiChevronDown } from "@mdi/js";
 import Divider from "../../../../_components/Divider";
 import Icon from "../../../../_components/Icon";
@@ -88,6 +87,8 @@ export default function NavBarItem({ item, openDropdown, setOpenDropdown, ...pro
               setOpenDropdown(null);
               props.onRouteChange();
             }}
+            openDropdown={openDropdown}
+            setOpenDropdown={setOpenDropdown}
           />
         </div>
       )}

@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import { containerMaxW } from "../../_lib/config";
-import lytroLogo from "../../_components/lytroLogo";
 
 type Props = {
   children: ReactNode;
@@ -24,9 +23,9 @@ export default function FooterBar({ children }: Props) {
           {children}
         </div>
         <div className="md:py-2">
-          <a href="https://lytro.dev" rel="noreferrer" target="_blank">
+          {/* <a href="https://lytro.dev" rel="noreferrer" target="_blank">
             <lytroLogo className="w-auto h-8 md:h-6 mx-auto" />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>
