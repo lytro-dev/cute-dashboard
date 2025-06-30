@@ -1,9 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import CardBox from "../CardBox";
-import { useState } from "react";
 
 type Props = {
   style: string;
@@ -11,7 +9,6 @@ type Props = {
 
 export default function StylePickBox({ style }: Props) {
   const router = useRouter();
-  const [imgSrc, setImgSrc] = useState(`https://static.lytro.dev/templates/one/small/${style}-v3.png`);
 
   const handleStylePick = (e: React.MouseEvent, style: string) => {
     e.preventDefault();
@@ -23,12 +20,6 @@ export default function StylePickBox({ style }: Props) {
     });
 
     router.push("/dashboard");
-  };
-
-  // fallback image paths
-  const fallbackMap: Record<string, string> = {
-    white: "/white-fallback.png",
-    basic: "/basic-fallback.png",
   };
 
   return (
