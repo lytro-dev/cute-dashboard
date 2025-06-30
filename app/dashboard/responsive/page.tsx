@@ -3,14 +3,12 @@ import SectionMain from "../../_components/Section/Main";
 import SectionTitle from "../../_components/Section/Title";
 import { appTitle, getPageTitle } from "../../_lib/config";
 import { Metadata } from "next";
-import getConfig from 'next/config';
-
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig?.basePath || '';
 
 export const metadata: Metadata = {
   title: getPageTitle("Responsive"),
 };
+
+const basePath = "/admin-one-react-tailwind";
 
 export default function ResponsivePage() {
   return (
