@@ -8,9 +8,9 @@ const title = `Admin One React Tailwind free`;
 const description =
   "Admin One - free React Next Tailwind dashboard with TypeScript and dark mode";
 
-const url = "https://justboil.github.io/admin-one-react-tailwind/";
+const url = "https://lytro-dev/admin-one-react-tailwind/";
 
-const image = `https://static.justboil.me/templates/one/repo-tailwind-react.png`;
+const image = `https://static.lytro.dev/templates/one/repo-tailwind-react.png`;
 
 const imageWidth = "1920";
 

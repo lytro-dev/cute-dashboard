@@ -1,12 +1,12 @@
-# [Admin One &mdash; Free React Tailwind 4.x Admin Dashboard with dark mode](https://justboil.me/tailwind-admin-templates/free-react-dashboard/)
+# [Admin One &mdash; Free React Tailwind 4.x Admin Dashboard with dark mode](https://lytro.dev/tailwind-admin-templates/free-react-dashboard/)
 
-[![version](https://img.shields.io/github/v/release/justboil/admin-one-react-tailwind)](https://justboil.me/tailwind-admin-templates/free-react-dashboard/)  [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://justboil.me/tailwind-admin-templates/free-react-dashboard/)
+[![version](https://img.shields.io/github/v/release/lytro-dev/cute-dashboard)](https://lytro.dev/tailwind-admin-templates/free-react-dashboard/)  [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://lytro.dev/tailwind-admin-templates/free-react-dashboard/)
 
 ### Tailwind 4.x React with Next.js and TypeScript
 
-[![Free React Tailwind TypeScript admin dashboard with dark mode](https://static.justboil.me/templates/one/repo-tailwind-react.png?v=4)](https://justboil.github.io/admin-one-react-tailwind/)
+[![Free React Tailwind TypeScript admin dashboard with dark mode](https://static.lytro.dev/templates/one/repo-tailwind-react.png?v=4)](https://lytro-dev/admin-one-react-tailwind/)
 
-[![React TypeScript Tailwind white & dark styles](https://static.justboil.me/templates/one/repo-styles.png)](https://justboil.github.io/admin-one-react-tailwind/)
+[![React TypeScript Tailwind white & dark styles](https://static.lytro.dev/templates/one/repo-styles.png)](https://lytro-dev/admin-one-react-tailwind/)
 
 ### Tailwind 4.x React with Next.js and TypeScript
 
@@ -18,7 +18,7 @@
 * **Production CSS** is only **&thickapprox;38kb**
 * Reusable components
 * Free under MIT License
-* [Premium version](https://justboil.me/tailwind-admin-templates/react-dashboard/) available
+* [Premium version](https://lytro.dev/tailwind-admin-templates/react-dashboard/) available
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@
 
 This is **Tailwind React TypeScript** version
 
-Looking for **Tailwind Vue**? Check [Admin One - Vue Tailwind dashboard](https://github.com/justboil/admin-one-vue-tailwind) version
+Looking for **Tailwind Vue**? Check [Admin One - Vue Tailwind dashboard](https://github.com/lytro/admin-one-vue-tailwind) version
 
 ## Responsive layout
 
@@ -52,27 +52,27 @@ Looking for **Tailwind Vue**? Check [Admin One - Vue Tailwind dashboard](https:/
 
 Mobile layout with hidden aside menu and collapsable cards & tables
 
-[![Free React Tailwind CSS 4 admin dashboard](https://static.justboil.me/templates/one/one-tailwind-vue-mobile.png)](https://justboil.github.io/admin-one-react-tailwind/)
+[![Free React Tailwind CSS 4 admin dashboard](https://static.lytro.dev/templates/one/one-tailwind-vue-mobile.png)](https://lytro-dev/admin-one-react-tailwind/)
 
 ### Small laptops 1024px
 
 Small laptop layout with show/hide aside menu option
 
-[![Free React Tailwind CSS 4 admin dashboard](https://static.justboil.me/templates/one/one-tailwind-vue-1024.png)](https://justboil.github.io/admin-one-react-tailwind/)
+[![Free React Tailwind CSS 4 admin dashboard](https://static.lytro.dev/templates/one/one-tailwind-vue-1024.png)](https://lytro-dev/admin-one-react-tailwind/)
 
-[![Free React Tailwind CSS 4 admin dashboard](https://static.justboil.me/templates/one/one-tailwind-vue-1024-menu-open.png)](https://justboil.github.io/admin-one-react-tailwind/)
+[![Free React Tailwind CSS 4 admin dashboard](https://static.lytro.dev/templates/one/one-tailwind-vue-1024-menu-open.png)](https://lytro-dev/admin-one-react-tailwind/)
 
 ### Laptops & desktops
 
 Classic layout with aside menus on the left
 
-[![Free React Tailwind CSS 4 admin dashboard](https://static.justboil.me/templates/one/one-tailwind-vue-widescreen.png)](https://justboil.github.io/admin-one-react-tailwind/)
+[![Free React Tailwind CSS 4 admin dashboard](https://static.lytro.dev/templates/one/one-tailwind-vue-widescreen.png)](https://lytro-dev/admin-one-react-tailwind/)
 
 ## Demo
 
 ### Free Dashboard Demo
 
-https://justboil.github.io/admin-one-react-tailwind/
+https://lytro-dev/admin-one-react-tailwind/
 
 ### Premium Dashboard Demo
 
@@ -90,9 +90,9 @@ Get code & install. Then `dev` or `build`
 
 #### Get the repo
 
-* [Create new repo](https://github.com/justboil/admin-one-react-tailwind/generate) with this template
+* [Create new repo](https://github.com/lytro-dev/cute-dashboard/generate) with this template
 * &hellip; or clone this repo on GitHub
-* &hellip; or [download .zip](https://github.com/justboil/admin-one-react-tailwind/archive/master.zip) from GitHub
+* &hellip; or [download .zip](https://github.com/lytro-dev/cute-dashboard/archive/master.zip) from GitHub
 
 #### Install
 
@@ -140,11 +140,11 @@ Docs are coming soon
 
 We try to make sure Dashboard works well in the latest versions of all major browsers
 
-<img src="https://justboil.me/images/browsers-svg/chrome.svg" width="64" height="64" alt="Chrome"> <img src="https://justboil.me/images/browsers-svg/firefox.svg" width="64" height="64" alt="Firefox"> <img src="https://justboil.me/images/browsers-svg/edge.svg" width="64" height="64" alt="Edge"> <img src="https://justboil.me/images/browsers-svg/safari.svg" width="64" height="64" alt="Safari"> <img src="https://justboil.me/images/browsers-svg/opera.svg" width="64" height="64" alt="Opera">
+<img src="https://lytro.dev/images/browsers-svg/chrome.svg" width="64" height="64" alt="Chrome"> <img src="https://lytro.dev/images/browsers-svg/firefox.svg" width="64" height="64" alt="Firefox"> <img src="https://lytro.dev/images/browsers-svg/edge.svg" width="64" height="64" alt="Edge"> <img src="https://lytro.dev/images/browsers-svg/safari.svg" width="64" height="64" alt="Safari"> <img src="https://lytro.dev/images/browsers-svg/opera.svg" width="64" height="64" alt="Opera">
 
 ## Reporting Issues
 
-JustBoil's free items are limited to community support on GitHub.
+lytro's free items are limited to community support on GitHub.
 
 The issue list is reserved exclusively for bug reports and feature requests. That means we do not accept usage questions. If you open an issue that does not conform to the requirements, it will be closed.
 
@@ -156,12 +156,10 @@ The issue list is reserved exclusively for bug reports and feature requests. Tha
 
 ## Licensing
 
-- Copyright &copy; 2019-2025 JustBoil.me (https://justboil.me)
 - Licensed under MIT
 
 ## Useful Links
 
-- [JustBoil.me](https://justboil.me/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Next.js Docs](https://nextjs.org/docs/app/getting-started)
 - [React.js Docs](https://react.dev/learn)

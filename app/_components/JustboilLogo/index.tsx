@@ -1,11 +1,11 @@
 import React from "react";
-import justboilLogoPath from "./logoPath";
+import lytroLogoPath from "./logoPath";
 
 type Props = {
   className?: string;
 };
 
-export default function JustboilLogo({ className = "" }: Props) {
+export default function lytroLogo({ className = "" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ export default function JustboilLogo({ className = "" }: Props) {
       viewBox="0 0 250 100"
       className={className}
     >
-      <path fill="currentColor" d={justboilLogoPath} />
+      <path fill="currentColor" d={lytroLogoPath} />
     </svg>
   );
 }

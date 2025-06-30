@@ -31,7 +31,7 @@ export default function StylePickBox({ style }: Props) {
     >
       <div className="mb-3 md:mb-6">
         <Image
-          src={`https://static.justboil.me/templates/one/small/${style}-v3.png`}
+          src={`https://static.lytro.dev/templates/one/small/${style}-v3.png`}
           width={1280}
           height={720}
           alt={style}

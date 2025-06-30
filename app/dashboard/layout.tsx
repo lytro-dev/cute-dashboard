@@ -9,7 +9,6 @@ import Icon from "../_components/Icon";
 import NavBar from "./_components/NavBar";
 import NavBarItemPlain from "./_components/NavBar/Item/Plain";
 import AsideMenu from "./_components/AsideMenu";
-import FooterBar from "./_components/FooterBar";
 import FormField from "../_components/FormField";
 import { Field, Form, Formik } from "formik";
 
@@ -31,9 +30,8 @@ export default function LayoutAuthenticated({ children }: Props) {
   return (
     <div className={`overflow-hidden lg:overflow-visible`}>
       <div
-        className={`${layoutAsidePadding} ${
-          isAsideMobileExpanded ? "ml-60 lg:ml-0" : ""
-        } pt-14 min-h-screen w-screen transition-position lg:w-auto bg-gray-50 dark:bg-slate-800 dark:text-slate-100`}
+        className={`${layoutAsidePadding} ${isAsideMobileExpanded ? "ml-60 lg:ml-0" : ""
+          } pt-14 min-h-screen w-screen transition-position lg:w-auto bg-gray-50 dark:bg-slate-800 dark:text-slate-100`}
       >
         <NavBar
           menu={menuNavBar}
@@ -83,17 +81,6 @@ export default function LayoutAuthenticated({ children }: Props) {
           onRouteChange={handleRouteChange}
         />
         {children}
-        <FooterBar>
-          Get more with{` `}
-          <a
-            href="https://tailwind-react.justboil.me/dashboard"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-600"
-          >
-            Premium version
-          </a>
-        </FooterBar>
       </div>
     </div>
   );

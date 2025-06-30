@@ -73,13 +73,13 @@ const menuAside: MenuAsideItem[] = [
     ],
   },
   {
-    href: "https://github.com/justboil/admin-one-react-tailwind",
+    href: "https://github.com/lytro-dev/cute-dashboard",
     label: "GitHub",
     icon: mdiGithub,
     target: "_blank",
   },
   {
-    href: "https://github.com/justboil/admin-one-vue-tailwind",
+    href: "https://github.com/lytro/admin-one-vue-tailwind",
     label: "Vue version",
     icon: mdiVuejs,
     target: "_blank",

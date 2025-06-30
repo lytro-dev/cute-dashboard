@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "static.justboil.me",
+        hostname: "static.lytro.dev",
       },
     ],
   },

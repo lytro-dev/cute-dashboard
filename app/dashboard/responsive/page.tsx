@@ -16,7 +16,7 @@ export default function ResponsivePage() {
       <SectionMain>
         <div className="md:w-10/12 shadow-2xl md:mx-auto rounded-3xl border-8 border-white overflow-hidden">
           <Image
-            src="https://static.justboil.me/templates/one/one-tailwind-vue-mobile.png"
+            src="https://static.lytro.dev/templates/one/one-tailwind-vue-mobile.png"
             width={1920}
             height={960}
             alt={`Mobile & Tablet - ${appTitle}`}
@@ -30,7 +30,7 @@ export default function ResponsivePage() {
       <SectionMain>
         <div className="md:w-10/12 shadow-2xl md:mx-auto rounded-3xl border-8 border-white overflow-hidden">
           <Image
-            src="https://static.justboil.me/templates/one/one-tailwind-vue-1024.png"
+            src="https://static.lytro.dev/templates/one/one-tailwind-vue-1024.png"
             width={1920}
             height={960}
             alt={`Small laptop 1024px - ${appTitle}`}
@@ -42,7 +42,7 @@ export default function ResponsivePage() {
       <SectionMain>
         <div className="md:w-10/12 shadow-2xl md:mx-auto rounded-3xl border-8 border-white overflow-hidden">
           <Image
-            src="https://static.justboil.me/templates/one/one-tailwind-vue-1024-menu-open.png"
+            src="https://static.lytro.dev/templates/one/one-tailwind-vue-1024-menu-open.png"
             width={1920}
             height={960}
             alt={`Small laptop 1024px (menu is open) - ${appTitle}`}
@@ -56,7 +56,7 @@ export default function ResponsivePage() {
       <SectionMain>
         <div className="md:w-10/12 shadow-2xl md:mx-auto rounded-3xl border-8 border-white overflow-hidden">
           <Image
-            src="https://static.justboil.me/templates/one/one-tailwind-vue-widescreen.png"
+            src="https://static.lytro.dev/templates/one/one-tailwind-vue-widescreen.png"
             width={1920}
             height={960}
             alt={`Laptop & desktop - ${appTitle}`}

@@ -24,7 +24,7 @@ export default function TablesPage() {
     <SectionMain>
       <SectionTitleLineWithButton icon={mdiTableBorder} title="Tables" main>
         <Button
-          href="https://github.com/justboil/admin-one-react-tailwind"
+          href="https://github.com/lytro-dev/cute-dashboard"
           target="_blank"
           icon={mdiGithub}
           label="Star on GitHub"

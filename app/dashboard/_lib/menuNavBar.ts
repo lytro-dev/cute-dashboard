@@ -71,14 +71,14 @@ const menuNavBar: MenuNavBarItem[] = [
     icon: mdiGithub,
     label: "GitHub",
     isDesktopNoLabel: true,
-    href: "https://github.com/justboil/admin-one-react-tailwind",
+    href: "https://github.com/lytro-dev/cute-dashboard",
     target: "_blank",
   },
   {
     icon: mdiVuejs,
     label: "Vue version",
     isDesktopNoLabel: true,
-    href: "https://github.com/justboil/admin-one-vue-tailwind",
+    href: "https://github.com/lytro/admin-one-vue-tailwind",
     target: "_blank",
   },
   {
