@@ -2,11 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import CardBox from "../CardBox";
-<<<<<<< HEAD
-=======
 import Icon from "../Icon";
 import { mdiWhiteBalanceSunny, mdiWeatherNight } from "@mdi/js";
->>>>>>> cfe454080dfdeb9125e82d6b147cb1b4612323e8
 
 type Props = {
   style: string;
@@ -27,15 +24,12 @@ export default function StylePickBox({ style }: Props) {
     router.push("/dashboard");
   };
 
-<<<<<<< HEAD
-=======
   // Choose icon based on style
   const iconMap: Record<string, string> = {
     white: mdiWhiteBalanceSunny,
     basic: mdiWeatherNight,
   };
 
->>>>>>> cfe454080dfdeb9125e82d6b147cb1b4612323e8
   return (
     <CardBox
       className="cursor-pointer bg-gray-50"
